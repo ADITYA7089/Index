@@ -1,0 +1,112 @@
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .main .left {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        display: none;
+    }
+
+    .main .right {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .main .right .overflow {
+        flex-direction: column;
+    }
+
+    .main .right .overflow .nav {
+        padding-left: 10px;
+    }
+
+    .main .right .overflow .nav .f i {
+        font-size: 22px;
+    }
+
+
+
+    .main .right .overflow .semi-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .main .right .overflow .semi-nav .input {
+        width: 100%;
+        height: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #d9d9d9;
+        overflow: hidden;
+    }
+
+    .main .right .overflow .semi-nav .input .btn {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main .right .overflow .semi-nav .input .btn i {
+        font-size: 22px;
+        color: blue;
+    }
+
+    .main .right .overflow .semi-nav .input .filed {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main .right .overflow .semi-nav .input .filed input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+    
+    .main .right .overflow .r-body{
+        display: block;
+    }
+    .main .right .overflow .r-body .b-left{
+        width: 100%;
+        height: auto;
+    }
+    .main .right .overflow .r-body .b-left .items{
+        display: flex;
+        flex-direction: row;
+    }
+    .main .right .overflow .r-body .b-right{
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .main .right .overflow .r-body .b-right .row{
+        width: 100%;
+    }
+    .main .right .overflow .semi-nav .folders-page-2{
+        display: none;
+    }
+    .main .right .overflow .semi-nav-page3{
+        gap: 40px;
+    }
+    .top-logo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .activeManu{
+        display: none;
+    }
+}
